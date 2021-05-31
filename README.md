@@ -57,7 +57,7 @@ int main(int argc, char *argv[]) {
     char *newMiniWorld;         //Matrice che verrà utilizzata per aggiornare il mondo di ogni processo
     char *newMatrix;            //Matrice nuova con l'aggiunta delle righe ricevute dai vicini
     char *finalWorld;           //Matrice che conterrà il mondo finale al termine del numero di generazioni
-    char *finalWorldForStruct;  //Matrice che conterrà i mondi finali per ogni generazione, all'interno della struct
+    
 
     partecipants = size > ROW_SIZE ? ROW_SIZE : size;     //Numero di partecipanti
     int next = (rank + 1) % partecipants;                 //Calcolo il processo successivo
