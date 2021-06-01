@@ -310,10 +310,11 @@ char checkUnderAndOverPopulation(char *matrixrec, int currentRow, int currentCol
 I test per valutare le prestazioni dell'algoritmo sono stati effettuati su un cluster AWS composto da 8 istanze di tipo m4.large. Inoltre, per valutare i test verranno considerati la <code>scalabilità forte</code> <code>scalabilità debole</code> e lo <code>speed-up</code> andando poi a valutare l'efficienza delle varie esecuzioni con diverso numero di processori.
 
 ## Strong Scalability
-La scalabilità forte è stata testata eseguendo il codice con un differente numero di processori (VCPUs) su una matrice di dimensioni costanti, effettuando diverse rilevazioni di tempo andando poi a calcolare un tempo medio per ogni esecuzione con i diversi processori. L'efficienza della strong scalability è stata calcolata tramite la seguente formula: <code> Ep = T1/(P*Tp))*100% </code>
+
+La scalabilità forte indica l'accelerazione per una dimensione del problema fissa,infatti è stata testata eseguendo il codice con un differente numero di processori (VCPUs) su una matrice di dimensioni costanti, effettuando diverse rilevazioni di tempo andando poi a calcolare un tempo medio per ogni esecuzione con i diversi processori. L'efficienza della strong scalability è stata calcolata tramite la seguente formula: <code> Ep = T1/(P*Tp))*100% </code>
 
 ## Weak Scalability 
-La scalabilità debole è stata misurata eseguendo il codice con un differente numero di VCPUs e aumentando di 1000 ogni volta il numero di righe, tenendo costante il numero di colonne. Anche qui sono state effettuate diverse rilevazioni calcolando poi la media per ogni esecuzione con i diversi processori.
+La scalabilità debole indica l'accelerazione per una dimensione variabile del problema al variare del numero di core ed è stata misurata eseguendo il codice con un differente numero di VCPUs e aumentando di 1000 ogni volta il numero di righe per ogni core, tenendo costante il numero di colonne. Anche qui sono state effettuate diverse rilevazioni calcolando poi la media per ogni esecuzione con i diversi processori.
 L'efficienza della weak scalability è stata calcolata tramite la seguente formula: <code> Ep = (T1/Tp)*100% </code> 
 
 ## Speed-up
