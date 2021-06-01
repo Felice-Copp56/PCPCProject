@@ -310,15 +310,15 @@ char checkUnderAndOverPopulation(char *matrixrec, int currentRow, int currentCol
 I test per valutare le prestazioni dell'algoritmo sono stati effettuati su un cluster AWS composto da 8 istanze di tipo m4.large. Inoltre, per valutare i test verranno considerati la <code>scalabilità forte</code> <code>scalabilità debole</code> e lo <code>speed-up</code> andando poi a valutare l'efficienza delle varie esecuzioni con diverso numero di processori.
 
 ## Strong Scalability
-La scalabilità forte è stata testata eseguendo il codice con un differente numero di processori (VCPUs) su una matrice di dimensioni costanti, effettuando diverse rilevazioni di tempo andando poi a calcolare un tempo medio per ogni esecuzione con i diversi processori.
+La scalabilità forte è stata testata eseguendo il codice con un differente numero di processori (VCPUs) su una matrice di dimensioni costanti, effettuando diverse rilevazioni di tempo andando poi a calcolare un tempo medio per ogni esecuzione con i diversi processori. L'efficienza della strong scalability è stata calcolata tramite la seguente formula: <code> Ep = T1/(P*Tp))*100% </code>
 
 ## Weak Scalability 
 La scalabilità debole è stata misurata eseguendo il codice con un differente numero di VCPUs e aumentando di 1000 ogni volta il numero di righe, tenendo costante il numero di colonne. Anche qui sono state effettuate diverse rilevazioni calcolando poi la media per ogni esecuzione con i diversi processori.
-L'efficienza della weak scalability è stata calcolata tramite la seguente formula: <code> Ep = T1/Tp </code> 
+L'efficienza della weak scalability è stata calcolata tramite la seguente formula: <code> Ep = (T1/Tp)*100% </code> 
 
 ## Speed-up
 Lo speedup misura la riduzione del tempo di  esecuzione dell’algoritmo eseguito su p processori rispetto all’esecuzione su 1 processore. Lo spee-up in generale è minore del numero di processori mentre lo speed-up ideale assume proprio valore p. Quindi un esecuzione su 2 processori presenta uno speed-up ideale di 2 e cosi via.
-    Lo speed-up è per la strong scalability è stato calcolato mediante la seguente formula: <code>Sp = T1 /Tp </code> dove T1 è il tempo d'esecuzione su un singolo processore mentre Tp è il tempo d'esecuzione dell'algoritmo con p processori.
+    Lo speed-up per la strong scalability è stato calcolato mediante la seguente formula: <code>Sp = T1 /Tp </code> dove T1 è il tempo d'esecuzione su un singolo processore mentre Tp è il tempo d'esecuzione dell'algoritmo con p processori.
 # Test 1 
 #### Rows=1000 Columns=1000 Generation=100
 
