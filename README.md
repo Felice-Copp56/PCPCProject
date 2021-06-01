@@ -316,7 +316,7 @@ La scalabilità forte è stata testata eseguendo il codice con un differente num
 La scalabilità debole è stata misurata eseguendo il codice con un differente numero di VCPUs e aumentando di 1000 ogni volta il numero di righe, tenendo costante il numero di colonne. Anche qui sono state effettuate diverse rilevazioni calcolando poi la media per ogni esecuzione con i diversi processori.
 L'efficienza della weak scalability è stata calcolata tramite la seguente formula: <code> Ep = T1/Tp </code> 
 
-## Speed-up<
+## Speed-up
 Lo speedup misura la riduzione del tempo di  esecuzione dell’algoritmo eseguito su p processori rispetto all’esecuzione su 1 processore. Lo spee-up in generale è minore del numero di processori mentre lo speed-up ideale assume proprio valore p. Quindi un esecuzione su 2 processori presenta uno speed-up ideale di 2 e cosi via.
     Lo speed-up è per la strong scalability è stato calcolato mediante la seguente formula: <code>Sp = T1 /Tp </code> dove T1 è il tempo d'esecuzione su un singolo processore mentre Tp è il tempo d'esecuzione dell'algoritmo con p processori.
 # Test 1 
@@ -337,7 +337,7 @@ Lo speedup misura la riduzione del tempo di  esecuzione dell’algoritmo eseguit
 | VCPUs | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 |
 | ----- | - | - | - | - | -- | -- | -- | -- |
 | Speed-up | 1,18 | 2,25 | 3,34 | 4,35 | 5,26 | 6,22 | 7,05 |7,82
-| Efficienza | 0,59146 | 0,56436 | 0,55685 | 0,54418 | 0,52691 | 0,51839 | 0,50362 | 0,489152 |
+| Efficienza | 59,14% | 56,43% | 55,68% | 54,41% | 52,69% | 51,83% | 50,36% | 48,91% |
   
 | ![image](https://user-images.githubusercontent.com/55912466/119875867-8cb16d80-bf27-11eb-82e4-854882953cae.png) | ![image](https://user-images.githubusercontent.com/55912466/120164400-d5547980-c1fa-11eb-9064-7c802219a22a.png) |
 | ---------------------------------------------------------------------------------------------------------------- | --------------------|
@@ -362,7 +362,7 @@ Come si può notare dalla tabella riassuntiva e dai grafici, lo speed-up su 2 pr
 | VCPUs | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 |
 | ----- | - | - | - | - | -- | -- | -- | -- |
 | Speed-up | 1,13 | 2,24 | 3,27 | 4,26 | 5,19 | 6,2 | 7,08 |7,93
-| Efficienza | 0,56654 | 0,56038 | 0,54585 | 0,53244 | 0,51324 | 0,51623 | 0,5061 | 0,4961 |
+| Efficienza | 56,65% | 56,03% | 54,58% | 53,24% | 51,32% | 51,62% | 50,61% | 49,61% |
 
 | ![image](https://user-images.githubusercontent.com/55912466/119875627-42c88780-bf27-11eb-94bc-2c8986f311fd.png) | ![image](https://user-images.githubusercontent.com/55912466/120163796-2f087400-c1fa-11eb-976f-81210529c78f.png) |
 | ---------------------------------------------------------------------------------------------------------------- | --------------------|
@@ -387,7 +387,7 @@ Come si può notare dalla tabella riassuntiva e dai grafici, lo speed-up su 2 pr
 | VCPUs | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 |
 | ----- | - | - | - | - | -- | -- | -- | -- |
 | Speed-up | 1,18 | 2,32 | 3,42 | 4,46 | 5,43 | 6,38 | 7,38 |8,24
-| Efficienza | 0,6038 | 0,58 | 0,57005 | 0,55761 | 0,54341 | 0,53195 | 0,52746 | 0,51506 |
+| Efficienza | 60,38% | 58% | 57% | 55,76% | 54,34% | 53,19% | 52,74% | 51,50% |
 
 | ![image](https://user-images.githubusercontent.com/55912466/119876304-09444c00-bf28-11eb-87d6-689787efd191.png) | ![image](https://user-images.githubusercontent.com/55912466/120162467-b48b2480-c1f8-11eb-9629-f076ed4128cb.png) |
 | ---------------------------------------------------------------------------------------------------------------- | --------------------|
@@ -399,6 +399,6 @@ Come si può notare dalla tabella riassuntiva e dai grafici, lo speed-up su 2 pr
 Il seguente grafico riporta il test della <code>Weak Scalability </code> il quale è stato fatto, aumentando per ogni nuovo processore il numero di righe,aggiungendo un valore di 1000. 
 | VCPUs | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 |
 | ----- | - | - | - | - | -- | -- | -- | -- |
-| Efficienza | 0,58 | 0,56 | 0,55 | 0,54 | 0,53 | 0,53 | 0,51 |0,50
+| Efficienza | 58% | 56% | 55% | 54% | 53% | 53% | 51% | 50%
 
 ![image](https://user-images.githubusercontent.com/55912466/120096467-0154f980-c12c-11eb-9ba1-5b7659917811.png)
