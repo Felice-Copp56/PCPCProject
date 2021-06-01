@@ -325,7 +325,7 @@ Lo speedup misura la riduzione del tempo di  esecuzione dell’algoritmo eseguit
 | Instances | VCPUs | Time |
 | --------- | ----- | ---- |
 | 1 | 1 | 3,2839828 |
-| 1 | 2 | 2,27761652 |
+| 1 | 2 | 2,7761652 |
 | 2 | 4 | 1,4547171 |
 | 3 | 6 | 0,9828964 |
 | 4 | 8 | 0,7543306 |
