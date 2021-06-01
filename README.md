@@ -317,7 +317,7 @@ La scalabilità debole è stata misurata eseguendo il codice con un differente n
 L'efficienza della weak scalability è stata calcolata tramite la seguente formula: <code> Ep = (T1/Tp)*100% </code> 
 
 ## Speed-up
-Lo speedup misura la riduzione del tempo di  esecuzione dell’algoritmo eseguito su p processori rispetto all’esecuzione su 1 processore. Lo spee-up in generale è minore del numero di processori mentre lo speed-up ideale assume proprio valore p. Quindi un esecuzione su 2 processori presenta uno speed-up ideale di 2 e cosi via.
+Lo speedup misura la riduzione del tempo di  esecuzione dell’algoritmo eseguito su p processori rispetto all’esecuzione su 1 processore. Lo speed-up in generale è minore del numero di processori mentre lo speed-up ideale assume proprio valore p. Quindi un esecuzione su 2 processori presenta uno speed-up ideale di 2 e cosi via.
     Lo speed-up per la strong scalability è stato calcolato mediante la seguente formula: <code>Sp = T1 /Tp </code> dove T1 è il tempo d'esecuzione su un singolo processore mentre Tp è il tempo d'esecuzione dell'algoritmo con p processori.
 # Test 1 
 #### Rows=1000 Columns=1000 Generation=100
